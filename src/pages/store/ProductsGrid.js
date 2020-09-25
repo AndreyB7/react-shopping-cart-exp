@@ -5,7 +5,7 @@ import styles from './ProductsGrid.module.scss';
 
 const ProductsGrid = () => {
 
-    const { products} = useContext(ProductsContext)
+    const { products } = useContext(ProductsContext)
 
     return ( 
         <div className={styles.p__container}>

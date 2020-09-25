@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { TokenService } from './services/storage.service'
+//import { TokenService } from './services/storage.service'
 
 const ApiService = {
 
@@ -7,9 +7,9 @@ const ApiService = {
         axios.defaults.baseURL = baseURL;
     },
 
-    setHeader() {
-        axios.defaults.headers.common["Authorization"] = `Bearer ${TokenService.getToken()}`
-    },
+    // setHeader() {
+    //     axios.defaults.headers.common["Authorization"] = `Bearer ${TokenService.getToken()}`
+    // },
 
     removeHeader() {
         axios.defaults.headers.common = {}
@@ -41,7 +41,7 @@ const ApiService = {
      *  - auth (optional)
      *    - username
      *    - password
-    **/
+     **/
     customRequest(data) {
         return axios(data)
     }
