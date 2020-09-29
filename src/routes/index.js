@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import Store from '../pages/store';
-import About from '../pages/About';
+import About from '../pages/about/About';
 import NotFound from '../pages/NotFound';
 import Cart from "../pages/cart";
 

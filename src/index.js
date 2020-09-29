@@ -8,13 +8,14 @@ import ProductsContextProvider from './contexts/ProductsContext';
 import CartContextProvider from './contexts/CartContext';
 
 ReactDOM.render(
-    <HelmetProvider>
-      <ProductsContextProvider>
-        <CartContextProvider>
+
+  <HelmetProvider>
+    <ProductsContextProvider>
+      <CartContextProvider>
           <Routes />
-        </CartContextProvider>
-      </ProductsContextProvider>
-    </HelmetProvider>,
+      </CartContextProvider>
+    </ProductsContextProvider>
+  </HelmetProvider>,
   document.getElementById('root')
 );
 

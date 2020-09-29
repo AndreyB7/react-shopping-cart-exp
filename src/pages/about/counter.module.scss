@@ -1,0 +1,14 @@
+.button {
+    min-width: 100px;
+    margin: 10px;
+    border: 1px solid blue;
+    border-radius: 3px;
+    transition: all 0.1s;
+    &:focus {
+        outline: none;
+        transform: scale(1.025);
+    }
+    &:hover {
+        background-color: transparent;
+    }
+}
